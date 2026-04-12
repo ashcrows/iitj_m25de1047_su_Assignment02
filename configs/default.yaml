@@ -1,0 +1,81 @@
+# configs/default.yaml
+# Speech Understanding Assignment 2 - Default Configuration
+# Author: Rohit (M25DE1047), IIT Jodhpur
+
+pipeline:
+  device: "mps"           # mps=Apple Silicon, cuda=NVIDIA GPU, cpu=fallback
+  target_lrl: "maithili"
+  segment_duration: 600.0  # 10 minutes
+
+paths:
+  input_audio: "data/original_segment.wav"
+  voice_ref: "data/student_voice_ref.wav"
+  syllabus: "data/speech_syllabus.txt"
+  lrl_corpus: "data/maithili_corpus.json"
+  output_dir: "outputs/"
+  models_dir: "models/"
+
+# Part 1: STT
+denoising:
+  method: "spectral_subtraction"   # or "deepfilternet"
+  noise_frames: 20
+  alpha: 2.0     # over-subtraction factor
+  beta: 0.002    # spectral floor
+
+lid:
+  feature_dim: 80
+  hidden_dim: 256
+  num_heads: 4
+  num_languages: 2
+  smoothing_window: 5
+  min_f1_threshold: 0.85
+
+asr:
+  model: "openai/whisper-large-v3"
+  ngram_order: 3
+  logit_bias_strength: 2.5
+  beam_size: 5
+  chunk_duration: 30.0   # seconds per ASR chunk
+
+# Part 2: Phonetic Mapping
+ipa:
+  en_backend: "espeak"
+  hi_backend: "custom"
+  code_switch_aware: true
+
+translation:
+  target_language: "maithili"
+  fallback_strategy: "phonetic_transfer"
+
+# Part 3: Voice Cloning
+speaker_embedding:
+  model_type: "xvector"
+  embedding_dim: 512
+  chunk_duration: 3.0
+
+prosody:
+  f0_extractor: "pyin"
+  f0_min_hz: 75.0
+  f0_max_hz: 600.0
+  hop_length: 160
+  frame_length: 512
+
+synthesis:
+  model: "vits"
+  sample_rate: 22050    # >= 22.05kHz requirement
+  crossfade_ms: 50
+
+# Part 4: Anti-Spoofing
+anti_spoofing:
+  feature_type: "lfcc"
+  num_ceps: 60
+  classifier: "lcnn"
+  segment_duration: 3.0
+  epochs: 20
+  eer_threshold: 0.10   # pass if EER < 10%
+
+adversarial:
+  attack_type: "fgsm"
+  target_snr_db: 40.0
+  epsilon_search_iters: 20
+  segment_duration: 5.0  # 5-second segment for attack

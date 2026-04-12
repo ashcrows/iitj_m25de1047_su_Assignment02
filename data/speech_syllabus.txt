@@ -1,0 +1,91 @@
+
+Speech Understanding Course Syllabus
+IIT Jodhpur - Spring 2026
+
+Module 1: Fundamentals of Speech Signals
+- Digital signal processing for speech: sampling, quantization, Fourier transform
+- Short-time spectral analysis: STFT, spectrogram, filterbanks
+- Mel-frequency cepstral coefficients (MFCC): derivation and computation
+- Cepstrum, cepstral analysis, cepstral mean normalization
+- Perceptual Linear Prediction (PLP), RASTA-PLP
+- Pitch (fundamental frequency) estimation: autocorrelation, YIN, PYIN
+- Voiced/unvoiced decision, voice activity detection (VAD)
+- Prosody: intonation, rhythm, stress, duration, energy contours
+
+Module 2: Acoustic Phonetics
+- Articulatory phonetics: vocal tract, articulators, manner/place of articulation
+- Phonemes, allophones, phonological rules
+- Vowels, consonants: stops, fricatives, affricates, nasals, approximants
+- Coarticulation, assimilation, reduction
+- Formants, formant transitions, spectral envelope
+- International Phonetic Alphabet (IPA)
+- Grapheme-to-phoneme (G2P) conversion
+
+Module 3: Automatic Speech Recognition (ASR)
+- Hidden Markov Models (HMM): Viterbi algorithm, Baum-Welch, forward-backward
+- Gaussian Mixture Models (GMM): EM algorithm, model selection
+- Deep Neural Network (DNN) acoustic models
+- Connectionist Temporal Classification (CTC)
+- Attention-based encoder-decoder: Transformer, LAS
+- Beam search decoding, language model integration
+- N-gram language models: interpolation, Kneser-Ney smoothing, perplexity
+- Word Error Rate (WER), evaluation methodology
+- Whisper, wav2vec 2.0, Conformer architectures
+- Constrained decoding, logit biasing
+
+Module 4: Speaker Recognition
+- Speaker verification vs identification vs diarization
+- i-vectors, x-vectors, TDNN architecture
+- d-vectors, speaker embeddings, cosine similarity
+- VoxCeleb dataset, speaker recognition evaluation
+- Anti-spoofing, countermeasure systems
+- LFCC, CQCC features for spoofing detection
+- ASVspoof challenge, EER evaluation
+
+Module 5: Text-to-Speech Synthesis (TTS)
+- Statistical parametric speech synthesis
+- WaveNet, Tacotron, FastSpeech, VITS architectures
+- Neural vocoders: WaveRNN, HiFi-GAN, EnCodec
+- Zero-shot voice cloning, speaker adaptation
+- Prosody modeling: F0 generation, duration prediction
+- Cross-lingual TTS, multilingual synthesis
+- Meta MMS (Massively Multilingual Speech)
+
+Module 6: Low-Resource Speech Processing
+- Transfer learning, domain adaptation
+- Data augmentation: SpecAugment, noise injection
+- Self-supervised learning: wav2vec, HuBERT, data2vec
+- Code-switching: Hinglish, multilingual ASR
+- Language identification (LID), language boundary detection
+- Low-resource languages: Maithili, Santhali, Gondi
+
+Module 7: Robustness and Security
+- Noise robustness, environmental mismatch
+- Adversarial examples: FGSM, PGD attacks on speech models
+- Adversarial perturbations, imperceptible noise
+- Model interpretability, attention visualization
+- Differential privacy in speech systems
+- Voice anti-spoofing, presentation attack detection
+
+Technical Terms Reference:
+acoustic model, adaptation, adversarial, affricates, alignment,
+allophone, amplitude, anti-spoofing, articulatory, attention,
+autocorrelation, backpropagation, bandwidth, Baum-Welch,
+beam search, cepstral, cepstrum, classification, coarticulation,
+Conformer, connectionist, constrained decoding, corpus,
+cosine similarity, countermeasure, CTC, d-vector, data augmentation,
+decoding, deep learning, denoising, diarization, digital,
+duration, embedding, encoder, energy, evaluation,
+feature extraction, filterbank, formant, Fourier, frequency,
+fundamental frequency, Gaussian, GMM, gradient, Griffin-Lim,
+Hinglish, HMM, i-vector, interpolation, intonation, IPA,
+Kneser-Ney, language identification, LFCC, LID, log-mel,
+Maithili, Markov, MFCC, mixture model, multilingual,
+neural network, noise, normalization, N-gram, perplexity,
+phoneme, pitch, PLP, posterior, prosody, PYIN, RASTA,
+recognition, resonance, rhythm, sampling, self-supervised,
+signal, softmax, speaker, spectrogram, spectral subtraction,
+SpecAugment, stochastic, stress, synthesis, TDNN,
+Transformer, transfer learning, utterance, VAD, Viterbi,
+vocoder, voice, vowel, wav2vec, WaveNet, WER, Whisper,
+x-vector, YIN, zero-shot
