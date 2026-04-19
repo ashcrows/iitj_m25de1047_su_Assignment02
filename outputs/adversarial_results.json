@@ -1,0 +1,97 @@
+{
+  "min_epsilon": 0.1,
+  "snr_db": 0.0,
+  "snr_ok": false,
+  "search_log": [
+    {
+      "epsilon": 0.05,
+      "snr_db": -2.94,
+      "flip": false,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.075,
+      "snr_db": -4.43,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.0875,
+      "snr_db": -4.7,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.09375,
+      "snr_db": -4.87,
+      "flip": false,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.096875,
+      "snr_db": -4.4,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.098438,
+      "snr_db": 2.12,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099219,
+      "snr_db": -1.9,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099609,
+      "snr_db": -1.02,
+      "flip": false,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099805,
+      "snr_db": -2.64,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099902,
+      "snr_db": 1.83,
+      "flip": false,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099951,
+      "snr_db": -1.62,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099976,
+      "snr_db": -2.81,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099988,
+      "snr_db": -3.16,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099994,
+      "snr_db": -1.93,
+      "flip": true,
+      "snr_ok": false
+    },
+    {
+      "epsilon": 0.099997,
+      "snr_db": 0.63,
+      "flip": true,
+      "snr_ok": false
+    }
+  ]
+}

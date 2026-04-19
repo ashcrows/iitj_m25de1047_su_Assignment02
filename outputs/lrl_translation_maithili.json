@@ -1,0 +1,133 @@
+{
+  "text": "muda then within ee subgroup ker male aa female what achhi performance lel small kids what achhi performance lel teenagers lel adults aa then what achhi performance lel elderly these chhathi all shorterchorter subgroups right aa any ker these subgroups subsubgroups me ee case malefemale so overall class malefemale aa then within malefemale i have ee age subgroups right my data oo i collected might not be representative ker all ker ee it might be unbalanced across subgroups so males क इदर क data जद ह उपर क data elderly क data जद ह adults क data जद ह i dont have kids right female might be i have more data par elderly i have more data par kids muda i dont have sufficient data par adults here ठक ह so any kind ker unbalanced representashan वशष नयकत unbalanced representashan happens oo means it has it has possibiliti ker messing up my overall performance if if i look at classwise details right so any kind ker these trivial differences oo come me va sensitivities oo come me so we should be aware ker oo aa whatever pratiroop va accuracies oo we chhathi kind ker computing should consider should take cognizance ker those subgroups those sampling बसटवशस और चकइए वडय it becomes lot more significant when we chhathi talking about problems like if you chhathi using audio lel healthcare if you chhathi using audio lel diagnosing any kind ker disease right so today we chhathi talking about using audio lel depression khoj alzheimers khoj schizophrenia all ker those mental disorders right so if you chhathi talking about autism if you chhathi talking about all ker oo then it should not happen oo any specific subgroup achhi underrepresented va other group achhi underrepresented chhathi not computed me proper manner right so if oo happens then when we have problem so it has dis be sensitive dis all ker those variations oo we chhathi talking about okay so these chhathi requirements ker good moolyankan frameworks broadly now lets take look at some ker some ker metrics oo we have lel specific vargeekaran tasks right so we have one ker one ker tasks oo we said oo we will discuss me course ker ee class achhi vakta verificashan aa audio vargeekaran right now what achhi vakta verificashan vakta verificashan achhi example oo i told you me morning can somebody remind me atm right so i am trying dis identify who achhi vakta aa it achhi two class kind ker problem it can be sorry it can be modeled me two different ways it can be modeled as binary vargeekaran problem where atm thing came me oo whether ee achhi genuine user ker atm card va not so genuine versus imposter atm card belongs dis richa so my audio achhi matching what achhi second way it can be it can be modelled look lel attendance so i just have audio sample lets say law enforcement people कय कहत ह उसक audio कस collect करत ह how do you collect audio म भ करत ह सट इट एगन पर और मम रकरडर स लट स द रकरडर एन आउडय कह स उनक एक आउडय मल अब द वट ट आइडटफई उस आउडय इस तस स दन इट स एन कलस परबलम आई हव मलटपल आई डटटज इन मई आउडय करत हए लकन दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क aa me my data set aa i want dis figure out okay reason im switching par my camera achhi i wanted dis write something par board achhi board visible dis you guys online yes yes thank you so it can be modeled as three different problems so one we said achhi verificashan what achhi verificashan verificashan achhi twoplus problem okay so one achhi so we can say one achhi not aa other achhi nonnot so ee audio me audio belongs dis vakta सबसकरइब सबसकरइब कर और सबसकरइब कर और सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब क आप इस ओपन सट एन आइडयज ओक आई गव एन एगजपल पलस वल पलस हलस हलस हलस हलस कम अकरस एन ऑडय सगनल ओक आइड दखओ दखओ वचलस डटबस वचलस डटबस what you understood so they have watch list सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब स correct what achhi second case person does not audio does not belong dis any ker individuals par data set now go back aa remember about vargeekaran problems vargeekaran solutions you guys have developed me your ml courses what used dis be outputs what used dis be classes svm pratiroop base pratiroop tantrika jal pratiroop any ker models you have come up sang what used dis be output class वटर वकटर वकटर वकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकट ज भ कछ करत ह हम लग right at end ker day if you have 12 classes it would tell you oo sambhavana ker belonging dis these 12 classes achhi abcdefghij sambhavana distribushan va max scores whatever you get decimaliti score decimaliti score you get something out ker it aa you assign sample dis class sang maximum sambhavana sang maximum simple did anywhere you pratiroop it as 13th class je achhi class not known anywhere anytime do you did oo right karan when i am doing ee identificashan these chhathi n class problem if i am doing cat versus dog vargeekaran my outputs chhathi always cat va dog it never achhi something else so third class two classes vargeekaran third class je says it does not exist i dont know what output achhi okay je becomes very very sensitive when you chhathi doing watchlist kind ker thing its not problem ker matching right karan you dont if person achhi not there par watchlist you dont want dis be matched dis somebody karan व बन द क unnecessary क grilling ह जएग right so you want class je says और अगर आप एक और अगर आप एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और ए अब एक पलस ह आईडमटन और person does not exist whatever however you want dis term it now how will you find out ee vargeekaran so it achhi not now it achhi no more just sorting it it achhi no more just sorting it aa assigning it dis class sang highest marksquare va highest sambhavana what will it entail right so its not just sorting aa assigning it dis highest highest bidder its also oo you can have threshold par top ker it where it says oo if if even best sambhavana achhi achhi below threshold then you say person does not exist me my data center right so oo achhi where your vakta verificashan concept comes me me vakta verificashan we pratiroop aa we can pratiroop लत ह three different problems इस परबलम यह नह बहत बहत बढत ह क यह दनदन 15202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 30.0,
+      "source_text": " But then within this sub-group of male and female, what is the performance for small kids, what is the performance for teenagers, for adults, and then what is the performance for elderly? These are all shorter-chorter sub-groups, right? And any of these sub-groups, the sub-sub-groups in this case, male-female, so overall class, male-female, and then within male-female I have this age",
+      "translated_text": "muda then within ee subgroup ker male aa female what achhi performance lel small kids what achhi performance lel teenagers lel adults aa then what achhi performance lel elderly these chhathi all shorterchorter subgroups right aa any ker these subgroups subsubgroups me ee case malefemale so overall class malefemale aa then within malefemale i have ee age"
+    },
+    {
+      "start": 30.0,
+      "end": 60.0,
+      "source_text": " subgroups, right, my data that I collected might not be representative of all of this, it might be unbalanced across subgroups, so males का इदर का data जादा है, उपर का data elderly का data जादा है, adults का data जादा है, I don't have kids, right, female might be I have more data on elderly, I have more data on kids, but I don't have sufficient data on adults here, ठीक है, so any kind of unbalanced representation विशेष नियुक्त",
+      "translated_text": "subgroups right my data oo i collected might not be representative ker all ker ee it might be unbalanced across subgroups so males क इदर क data जद ह उपर क data elderly क data जद ह adults क data जद ह i dont have kids right female might be i have more data par elderly i have more data par kids muda i dont have sufficient data par adults here ठक ह so any kind ker unbalanced representashan वशष नयकत"
+    },
+    {
+      "start": 60.0,
+      "end": 90.0,
+      "source_text": " unbalanced representation happens that means it has it has a possibility of messing up my overall performance if if i look at class-wise details right so any kind of these trivial differences that come in or sensitivities that come in so we should be aware of that and whatever model or accuracies that we are kind of computing should consider should take cognizance of those subgroups those sampling बिस्टिविशंस और चुकाइए वीडियो",
+      "translated_text": "unbalanced representashan happens oo means it has it has possibiliti ker messing up my overall performance if if i look at classwise details right so any kind ker these trivial differences oo come me va sensitivities oo come me so we should be aware ker oo aa whatever pratiroop va accuracies oo we chhathi kind ker computing should consider should take cognizance ker those subgroups those sampling बसटवशस और चकइए वडय"
+    },
+    {
+      "start": 90.0,
+      "end": 120.0,
+      "source_text": " It becomes a lot more significant when we are talking about problems like if you are using audio for healthcare, if you are using audio for diagnosing any kind of disease, right? So, today we are talking about using audio for depression detection, Alzheimer's detection, schizophrenia, all of those mental disorders, right? So if you are talking about autism, if you are talking about all of that, then it should not happen that any specific sub-group is under-represented or the other group is under-represented.",
+      "translated_text": "it becomes lot more significant when we chhathi talking about problems like if you chhathi using audio lel healthcare if you chhathi using audio lel diagnosing any kind ker disease right so today we chhathi talking about using audio lel depression khoj alzheimers khoj schizophrenia all ker those mental disorders right so if you chhathi talking about autism if you chhathi talking about all ker oo then it should not happen oo any specific subgroup achhi underrepresented va other group achhi underrepresented"
+    },
+    {
+      "start": 120.0,
+      "end": 150.0,
+      "source_text": " are not computed in a proper manner right so if that happens then when we have a problem so it has to be sensitive to all of those variations that we are talking about okay so these are the requirements of a good evaluation frameworks broadly now let's take a look at some of the some of the metrics that we have for specific classification tasks right so we have one of the one of the tasks that we said that we will discuss in the course of this class is",
+      "translated_text": "chhathi not computed me proper manner right so if oo happens then when we have problem so it has dis be sensitive dis all ker those variations oo we chhathi talking about okay so these chhathi requirements ker good moolyankan frameworks broadly now lets take look at some ker some ker metrics oo we have lel specific vargeekaran tasks right so we have one ker one ker tasks oo we said oo we will discuss me course ker ee class achhi"
+    },
+    {
+      "start": 150.0,
+      "end": 180.0,
+      "source_text": " speaker verification and audio classification right now what is speaker verification speaker verification is the example that I told you in the morning can somebody remind me ATM right so I am trying to identify who is the speaker and it is two class kind of a problem it can be sorry it can be modeled in two different ways It can be modeled as a binary classification problem Where ATM thing",
+      "translated_text": "vakta verificashan aa audio vargeekaran right now what achhi vakta verificashan vakta verificashan achhi example oo i told you me morning can somebody remind me atm right so i am trying dis identify who achhi vakta aa it achhi two class kind ker problem it can be sorry it can be modeled me two different ways it can be modeled as binary vargeekaran problem where atm thing"
+    },
+    {
+      "start": 180.0,
+      "end": 210.0,
+      "source_text": " came in that whether this is a genuine user of the ATM card or not, so genuine versus imposter, the ATM card belongs to Richa, so my audio is matching, what is the second way it can be it can be modelled look for attendance, so I just have an audio sample, let's say law enforcement people क्या कहते हैं उसको audio कैसे collect करते हैं how do you collect the audio मैं भी करता हूँ",
+      "translated_text": "came me oo whether ee achhi genuine user ker atm card va not so genuine versus imposter atm card belongs dis richa so my audio achhi matching what achhi second way it can be it can be modelled look lel attendance so i just have audio sample lets say law enforcement people कय कहत ह उसक audio कस collect करत ह how do you collect audio म भ करत ह"
+    },
+    {
+      "start": 210.0,
+      "end": 240.0,
+      "source_text": " सेट इट एगेन पर और मेम रिकॉर्डर सो लेट से दे रिकॉर्डर एन आउडियो कहीं से उनको एक आउडियो मिला अब दे वांट टू आइडेंटिफाई उस आउडियो इस तुस सो देन इट से एन क्लास प्रॉब्लम आई हाव माल्टिपल आई डेंटिटीज इन माई आउडियो करते हुए लेकिन देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने क",
+      "translated_text": "सट इट एगन पर और मम रकरडर स लट स द रकरडर एन आउडय कह स उनक एक आउडय मल अब द वट ट आइडटफई उस आउडय इस तस स दन इट स एन कलस परबलम आई हव मलटपल आई डटटज इन मई आउडय करत हए लकन दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क लए दखन क"
+    },
+    {
+      "start": 240.0,
+      "end": 270.0,
+      "source_text": " and in my data set and i want to figure out okay the reason i'm switching on my camera is i wanted to write something on the board is the board visible to you guys online yes yes thank you so",
+      "translated_text": "aa me my data set aa i want dis figure out okay reason im switching par my camera achhi i wanted dis write something par board achhi board visible dis you guys online yes yes thank you so"
+    },
+    {
+      "start": 270.0,
+      "end": 300.0,
+      "source_text": " It can be modeled as a three different problems. So one we said is verification, what is verification? Verification is a two-plus problem, okay? So one is, so we can say one is not and the other is non-not. So this, the audio in, the audio belongs to the speaker.",
+      "translated_text": "it can be modeled as three different problems so one we said achhi verificashan what achhi verificashan verificashan achhi twoplus problem okay so one achhi so we can say one achhi not aa other achhi nonnot so ee audio me audio belongs dis vakta"
+    },
+    {
+      "start": 300.0,
+      "end": 330.0,
+      "source_text": " सब्सक्राइब सब्सक्राइब करें और सब्सक्राइब करें और सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब",
+      "translated_text": "सबसकरइब सबसकरइब कर और सबसकरइब कर और सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब"
+    },
+    {
+      "start": 330.0,
+      "end": 360.0,
+      "source_text": " कि आप इस ओपन सेट एनी आइडियाज ओके आई गेवी एन एग्जांपल पुलिस वाला पुलिस हेल्स हेल्स हेल्स हेल्स केम अक्रॉस एन ऑडियो सिग्नल ओके आइड देखाओ देखाओ वॉचलेस डेटाबेस वॉचलेस डेटाबेस what you understood so they have a watch list",
+      "translated_text": "क आप इस ओपन सट एन आइडयज ओक आई गव एन एगजपल पलस वल पलस हलस हलस हलस हलस कम अकरस एन ऑडय सगनल ओक आइड दखओ दखओ वचलस डटबस वचलस डटबस what you understood so they have watch list"
+    },
+    {
+      "start": 360.0,
+      "end": 390.0,
+      "source_text": " सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब स",
+      "translated_text": "सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब सबसकरइब स"
+    },
+    {
+      "start": 390.0,
+      "end": 420.0,
+      "source_text": " Correct? What is the second case? The person does not, the audio does not belong to any of the individuals on the data set. Now, go back and remember about the classification problems, the classification solutions you guys have developed in your ML courses. What used to be the outputs? What used to be the classes? SVM model, base model, neural network model, any of the models you have come up with, What used to be the output class?",
+      "translated_text": "correct what achhi second case person does not audio does not belong dis any ker individuals par data set now go back aa remember about vargeekaran problems vargeekaran solutions you guys have developed me your ml courses what used dis be outputs what used dis be classes svm pratiroop base pratiroop tantrika jal pratiroop any ker models you have come up sang what used dis be output class"
+    },
+    {
+      "start": 420.0,
+      "end": 450.0,
+      "source_text": " वेटर वेक्टर वेक्टर वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्ट",
+      "translated_text": "वटर वकटर वकटर वकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकटरवकट"
+    },
+    {
+      "start": 450.0,
+      "end": 480.0,
+      "source_text": " जो भी कुछ करते हैं हम लोग, right, at the end of the day, if you have 12 classes, it would tell you that the probability of belonging to these 12 classes is ABCDEFGHIJ, probability distribution, or max scores, whatever you get, decimality score, decimality score, you get something out of it, and you assign the sample to the class with the maximum probability with the maximum",
+      "translated_text": "ज भ कछ करत ह हम लग right at end ker day if you have 12 classes it would tell you oo sambhavana ker belonging dis these 12 classes achhi abcdefghij sambhavana distribushan va max scores whatever you get decimaliti score decimaliti score you get something out ker it aa you assign sample dis class sang maximum sambhavana sang maximum"
+    },
+    {
+      "start": 480.0,
+      "end": 510.0,
+      "source_text": " simple did anywhere you model it as a 13th class which is class not known anywhere anytime do you did that right because when I am doing this identification these are n class problem if I am doing a cat versus dog classification my outputs are always cat or a dog it never is something else so a third class",
+      "translated_text": "simple did anywhere you pratiroop it as 13th class je achhi class not known anywhere anytime do you did oo right karan when i am doing ee identificashan these chhathi n class problem if i am doing cat versus dog vargeekaran my outputs chhathi always cat va dog it never achhi something else so third class"
+    },
+    {
+      "start": 510.0,
+      "end": 540.0,
+      "source_text": " two classes classification, a third class which says it does not exist I don't know what the output is okay which becomes very very sensitive when you are doing watchlist kind of a thing it's not a problem of matching right because you don't, if the person is not there on the watchlist, you don't want to be matched to somebody because वो बन दे कि unnecessary की grilling हो जाएगी right, so you want a class which says और अगर आप एक और अगर आप एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और ए",
+      "translated_text": "two classes vargeekaran third class je says it does not exist i dont know what output achhi okay je becomes very very sensitive when you chhathi doing watchlist kind ker thing its not problem ker matching right karan you dont if person achhi not there par watchlist you dont want dis be matched dis somebody karan व बन द क unnecessary क grilling ह जएग right so you want class je says और अगर आप एक और अगर आप एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और ए"
+    },
+    {
+      "start": 540.0,
+      "end": 570.0,
+      "source_text": " अब एक प्लास है आई-डो-मो-ट्-नॉ और the person does not exist, whatever, however you want to term it. Now, how will you find out this classification? So, it is not, now, it is no more just sorting it. It is no more just sorting it and assigning it to the class with highest mark-square or highest probability. What will it entail?",
+      "translated_text": "अब एक पलस ह आईडमटन और person does not exist whatever however you want dis term it now how will you find out ee vargeekaran so it achhi not now it achhi no more just sorting it it achhi no more just sorting it aa assigning it dis class sang highest marksquare va highest sambhavana what will it entail"
+    },
+    {
+      "start": 570.0,
+      "end": 600.0,
+      "source_text": " right so it's not just sorting and assigning it to the highest highest bidder it's also that you can have a threshold on top of it where it says that if the if even the best probability is is below the threshold then you say the person does not exist in my data center right so that is where your speaker verification concept comes in in speaker verification we model and we can model लेता है three different problems.",
+      "translated_text": "right so its not just sorting aa assigning it dis highest highest bidder its also oo you can have threshold par top ker it where it says oo if if even best sambhavana achhi achhi below threshold then you say person does not exist me my data center right so oo achhi where your vakta verificashan concept comes me me vakta verificashan we pratiroop aa we can pratiroop लत ह three different problems"
+    },
+    {
+      "start": 600.0,
+      "end": 630.0,
+      "source_text": " इस प्रॉब्लम यह नहीं बहुत बहुत बढ़ता है कि यह दिन-दिन 15-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20",
+      "translated_text": "इस परबलम यह नह बहत बहत बढत ह क यह दनदन 15202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020"
+    }
+  ],
+  "translation_coverage": 0.193,
+  "target_language": "maithili"
+}

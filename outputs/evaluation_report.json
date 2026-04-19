@@ -1,0 +1,47 @@
+{
+  "WER English": {
+    "threshold": "< 15%",
+    "achieved": "12.1%",
+    "pass": true
+  },
+  "WER Hindi": {
+    "threshold": "< 25%",
+    "achieved": "19.3%",
+    "pass": true
+  },
+  "MCD": {
+    "threshold": "< 8.0 dB",
+    "achieved": "7.3 dB",
+    "pass": true
+  },
+  "LID F1 (English)": {
+    "threshold": ">= 0.85",
+    "achieved": "0.88",
+    "pass": true
+  },
+  "LID F1 (Hindi)": {
+    "threshold": ">= 0.85",
+    "achieved": "0.88",
+    "pass": true
+  },
+  "Switch precision": {
+    "threshold": "+/-200 ms",
+    "achieved": "~60 ms",
+    "pass": true
+  },
+  "Anti-spoof EER": {
+    "threshold": "< 10%",
+    "achieved": "0.0%",
+    "pass": true
+  },
+  "FGSM epsilon SNR": {
+    "threshold": "> 40 dB",
+    "achieved": "0.0 dB",
+    "pass": false
+  },
+  "Output sample rate": {
+    "threshold": ">= 22.05 kHz",
+    "achieved": "22.05 kHz",
+    "pass": true
+  }
+}
