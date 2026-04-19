@@ -1,132 +1,152 @@
-# Speech Understanding – Programming Assignment 2
+# Speech Understanding — Programming Assignment 2
 
-**Ashish Sinha | M25DE1047**
-**IIT Jodhpur | MTech Data Engineering | Spring 2026**
+**IIT Jodhpur | MTech Data Engineering | M25DE1047 | Spring 2026**
 
 ---
 
 ## Overview
 
-This project implements an **end-to-end speech processing pipeline** for handling **code-switched (Hinglish) lecture audio** and converting it into a **Low Resource Language (Maithili)** using **my own voice via zero-shot voice cloning**.
+This project implements an **end-to-end speech processing pipeline** for handling **code-switched (Hinglish) lecture audio** and converting it into a **Low Resource Language (Maithili)** using **zero-shot voice cloning with my own voice**.
 
-Unlike standard pipelines, this implementation focuses on:
+The pipeline integrates:
 
-* Frame-level language understanding
-* Custom decoding logic for ASR
-* Manual phonetic mapping for Hinglish
-* Prosody-aware voice synthesis
-* Robustness against spoofing and adversarial noise
+* Speech-to-Text (STT) with language-aware decoding
+* Phonetic normalization using IPA
+* Translation to a low-resource language
+* Voice cloning with prosody transfer
+* Anti-spoofing and adversarial robustness
 
-The goal was to **build the system from an architectural perspective**, not just use pre-built APIs.
+The focus of this assignment is on **system-level integration and custom logic implementation**, rather than direct usage of APIs.
 
 ---
 
-## Pipeline Summary
+## ⚠️ Why Notebook (.ipynb) is Used
 
-The system processes the lecture audio in 4 stages:
+This project is implemented using a **Jupyter Notebook (.ipynb)** instead of standalone scripts due to the following reasons:
 
-### 1. Speech-to-Text (Part I)
+### 1. GPU Requirement
 
-* Noise removal using spectral subtraction
+Several components require **GPU acceleration**:
+
+* Whisper / ASR models
+* Speaker embedding extraction
+* TTS synthesis models
+* Adversarial perturbation generation
+
+Local systems (especially CPU-only or Mac environments) are **not sufficient** to run the full pipeline efficiently.
+
+---
+
+### 2. Colab / Kaggle Compatibility
+
+The notebook is designed to run on:
+
+* **Google Colab (recommended)**
+* **Kaggle Notebook (T4 / GPU100 environments)**
+
+These platforms provide:
+
+* Free GPU (T4 / A100 depending on availability)
+* Pre-installed deep learning libraries
+* Faster execution for model inference
+
+---
+
+### 3. Step-by-Step Execution
+
+The notebook structure allows:
+
+* Running each stage independently
+* Debugging intermediate outputs
+* Visualizing results (spectrograms, outputs, etc.)
+
+This is especially useful for:
+
+* Multi-stage pipelines (Part I → IV)
+* Testing individual components (LID, TTS, DTW, etc.)
+
+---
+
+### 4. Reproducibility
+
+Using a notebook ensures:
+
+* Controlled execution environment
+* Clear sequence of steps
+* Easy reproducibility for evaluation
+
+---
+
+## 🧠 Pipeline Summary
+
+### Part I — Code-Switched Transcription
+
+* Denoising using spectral subtraction
 * Frame-level Language Identification (English vs Hindi)
-* Whisper-based transcription with **custom constrained decoding**
+* Whisper-based transcription with constrained decoding
 
-  * Used N-gram biasing to prioritize technical words
+### Part II — Phonetic Mapping & Translation
 
-### 2. Phonetic Mapping & Translation (Part II)
+* Hinglish → IPA conversion using custom rules
+* Translation to Maithili using curated dictionary
 
-* Hinglish text converted to **IPA representation**
-* Custom rule-based + dictionary mapping implemented
-* Translated to Maithili using a **manually curated corpus**
+### Part III — Voice Cloning
 
-### 3. Voice Cloning (Part III)
+* Speaker embedding from 60s voice sample
+* Prosody transfer using DTW (F0 + energy)
+* Speech synthesis using TTS model
 
-* Extracted speaker embedding from my 60-second voice sample
-* Applied **prosody transfer using DTW**
-* Generated final speech using TTS model
+### Part IV — Robustness
 
-### 4. Robustness & Security (Part IV)
-
-* Built anti-spoofing classifier using LFCC features
-* Implemented FGSM adversarial attack to test LID robustness
+* Anti-spoofing classifier using LFCC features
+* FGSM-based adversarial attack on LID
 
 ---
 
-## Key Design Decisions
+## 🚀 How to Run (Recommended)
 
-Some important implementation choices:
+### Option 1 — Google Colab (Best)
 
-* Used **frame-level LID instead of segment-level** to capture fast code-switching
-* Applied **logit bias instead of full LM decoding** for better control over Whisper
-* Designed a **hybrid IPA mapper** (rule-based + fallback)
-* Used **log-frequency domain for DTW** (more stable for pitch alignment)
-* Selected **LFCC instead of MFCC** for spoof detection (better for synthetic signals)
+1. Open the notebook in Colab
+2. Enable GPU:
 
----
-
-## Project Structure
-
-```
-.
-├── pipeline.py
-├── prepare_data.py
-├── evaluate.py
-├── requirements.txt
-├── src/
-│   ├── part1/   # STT + LID + Denoising
-│   ├── part2/   # IPA + Translation
-│   ├── part3/   # Voice Cloning
-│   ├── part4/   # Anti-spoofing + Adversarial
-│   └── utils/
-├── data/
-├── outputs/
-```
+   * Runtime → Change runtime type → GPU
+3. Run all cells sequentially
 
 ---
 
-## Setup Instructions
+### Option 2 — Kaggle Notebook
 
-### 1. Install dependencies
+1. Upload notebook + dataset
+2. Enable GPU (T4 / GPU100)
+3. Run cells
+
+---
+
+## ⚙️ Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Install system tools
+Additional system dependencies:
 
 ```bash
-brew install ffmpeg espeak-ng
+apt-get install ffmpeg espeak-ng
 ```
 
 ---
 
-## Running the Pipeline
+## 📁 Inputs
 
-### Step 1: Prepare data
-
-```bash
-python prepare_data.py
-```
-
-### Step 2: Run full pipeline
-
-```bash
-python pipeline.py
-```
-
-### Step 3: Evaluate results
-
-```bash
-python evaluate.py
-```
+* `Main.m4a` → Lecture audio
+* `voice_test_add.wav` → 60-second voice sample
 
 ---
 
-## Outputs
+## 📁 Outputs
 
-The pipeline generates:
-
-* Transcribed Hinglish text
+* Transcription (Hinglish)
 * IPA representation
 * Maithili translation
 * Final synthesized audio (22.05 kHz)
@@ -134,9 +154,7 @@ The pipeline generates:
 
 ---
 
-## Evaluation Metrics
-
-The system is evaluated based on:
+## 📊 Evaluation Metrics
 
 * Word Error Rate (WER)
 * Mel Cepstral Distortion (MCD)
@@ -146,21 +164,11 @@ The system is evaluated based on:
 
 ---
 
-## Limitations
+## ⚠️ Limitations
 
-* Hinglish IPA mapping is partially rule-based and may miss rare patterns
-* Translation quality depends on size of custom corpus
-* TTS quality varies based on backend availability
-
----
-
-## References
-
-* Whisper (OpenAI)
-* VITS / YourTTS
-* X-vector speaker embedding
-* PYIN pitch extraction
-* FGSM adversarial method
+* Hinglish IPA mapping is partially rule-based
+* Translation quality depends on dictionary coverage
+* GPU availability may vary across platforms
 
 ---
 
@@ -170,7 +178,3 @@ Ashish Sinha
 M25DE1047
 MTech Data Engineering
 IIT Jodhpur
-
----
-
-*This implementation was developed as part of the Speech Understanding course assignment with focus on system-level integration and custom modeling.*
