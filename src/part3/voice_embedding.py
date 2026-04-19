@@ -2,7 +2,7 @@
 Task 3.1: Speaker Embedding Extraction (x-vector / d-vector).
 Extracts high-dimensional speaker representation from 60s reference.
 Architecture: TDNN-based x-vector extractor.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import logging

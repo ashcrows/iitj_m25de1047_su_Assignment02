@@ -2,7 +2,7 @@
 Task 4.1: Anti-Spoofing Countermeasure (CM) using LFCC + Light CNN.
 Classifies audio as Bona Fide (real) or Spoof (synthesized).
 Evaluated using Equal Error Rate (EER).
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import json

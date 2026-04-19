@@ -1,7 +1,7 @@
 """
 Speech Understanding - Programming Assignment 2
 Main Pipeline: Code-Switched STT → Phonetic Mapping → LRL TTS → Anti-Spoofing
-Author: Rohit (M25DE1047), MTech, IIT Jodhpur
+Author: Ashish Siha (M25DE1047), MTech, IIT Jodhpur
 """
 
 import argparse

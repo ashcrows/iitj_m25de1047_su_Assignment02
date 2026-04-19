@@ -8,7 +8,7 @@ Backend priority (auto-detected at runtime):
   3. TorchAudio Tacotron2+WaveRNN (English-only, for smoke-testing)
   4. Mock synthesis  (silence placeholders, always available)
 
-Author: Rohit (M25DE1047), IIT Jodhpur
+Author: Ashish Sinha (M25DE1047), IIT Jodhpur
 """
 
 import logging

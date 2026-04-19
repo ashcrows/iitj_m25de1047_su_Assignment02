@@ -1,7 +1,7 @@
 """
 Task 2.1: IPA Unified Representation for Code-Switched Hinglish.
 Custom phoneme mapping layer for Hinglish G2P (Grapheme-to-Phoneme).
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import json

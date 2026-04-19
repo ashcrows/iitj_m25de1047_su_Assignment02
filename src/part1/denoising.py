@@ -2,7 +2,7 @@
 Task 1.3: Denoising & Normalization for classroom audio.
 Implements Spectral Subtraction (no extra deps) and optional DeepFilterNet.
 
-Author: Rohit (M25DE1047), IIT Jodhpur
+Author: Ashish Sinha (M25DE1047), IIT Jodhpur
 """
 
 import logging

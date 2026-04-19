@@ -2,7 +2,7 @@
 Task 2.2: Semantic Translation to Low-Resource Language (LRL).
 Implements dictionary-based translation with phonetic transfer fallback.
 Supports Maithili, Santhali, Gondi.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import json

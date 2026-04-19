@@ -1,7 +1,7 @@
 """
 Task 1.2: Constrained Beam Search ASR using Whisper-v3 with
 N-gram language model logit biasing for technical vocabulary.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import collections

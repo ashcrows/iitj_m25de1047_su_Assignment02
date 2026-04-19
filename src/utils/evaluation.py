@@ -1,6 +1,6 @@
 """
 Evaluation metrics for all pipeline stages.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import json

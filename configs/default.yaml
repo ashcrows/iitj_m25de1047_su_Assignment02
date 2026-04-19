@@ -1,6 +1,6 @@
 # configs/default.yaml
 # Speech Understanding Assignment 2 - Default Configuration
-# Author: Rohit (M25DE1047), IIT Jodhpur
+# Author: Ashish Sinha (M25DE1047), IIT Jodhpur
 
 pipeline:
   device: "mps"           # mps=Apple Silicon, cuda=NVIDIA GPU, cpu=fallback

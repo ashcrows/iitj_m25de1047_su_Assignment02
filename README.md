@@ -218,4 +218,4 @@ python3 tests/test_pipeline.py
 
 ---
 
-*Student: Rohit | M25DE1047 | IIT Jodhpur | Speech Understanding | Spring 2026*
+*Student: Ashish Sinha | M25DE1047 | IIT Jodhpur | Speech Understanding | Spring 2026*

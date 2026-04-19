@@ -2,7 +2,7 @@
 Task 1.1: Multi-Head Frame-Level Language Identification (LID).
 Distinguishes English (L2) vs Hindi at frame-level resolution.
 Architecture: CNN feature extractor + Multi-Head Attention + CRF.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import json

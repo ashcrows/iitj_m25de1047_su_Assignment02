@@ -1,6 +1,6 @@
 # Implementation Note
 **Speech Understanding — Assignment 2**
-**Rohit | M25DE1047 | IIT Jodhpur | Spring 2026**
+**Ashish Sinha | M25DE1047 | IIT Jodhpur | Spring 2026**
 
 One non-obvious design choice per question, as required.
 

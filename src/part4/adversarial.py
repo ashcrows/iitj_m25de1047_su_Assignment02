@@ -1,7 +1,7 @@
 """
 Task 4.2: Adversarial Noise Injection via FGSM to attack LID system.
 Goal: Find minimum epsilon (inaudible, SNR > 40dB) that flips Hindi → English.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import json

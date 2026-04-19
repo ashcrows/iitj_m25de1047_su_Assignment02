@@ -1,7 +1,7 @@
 """
 Task 3.2: Prosody Feature Extraction & Dynamic Time Warping (DTW).
 Extracts F0 (pitch) and energy from source lecture, warps to target.
-Author: Rohit (M25DE1047)
+Author: Ashish Sinha (M25DE1047)
 """
 
 import logging
