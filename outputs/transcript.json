@@ -1,0 +1,131 @@
+{
+  "text": " But then within this sub-group of male and female, what is the performance for small kids, what is the performance for teenagers, for adults, and then what is the performance for elderly? These are all shorter-chorter sub-groups, right? And any of these sub-groups, the sub-sub-groups in this case, male-female, so overall class, male-female, and then within male-female I have this age  subgroups, right, my data that I collected might not be representative of all of this, it might be unbalanced across subgroups, so males का इदर का data जादा है, उपर का data elderly का data जादा है, adults का data जादा है, I don't have kids, right, female might be I have more data on elderly, I have more data on kids, but I don't have sufficient data on adults here, ठीक है, so any kind of unbalanced representation विशेष नियुक्त  unbalanced representation happens that means it has it has a possibility of messing up my overall performance if if i look at class-wise details right so any kind of these trivial differences that come in or sensitivities that come in so we should be aware of that and whatever model or accuracies that we are kind of computing should consider should take cognizance of those subgroups those sampling बिस्टिविशंस और चुकाइए वीडियो  It becomes a lot more significant when we are talking about problems like if you are using audio for healthcare, if you are using audio for diagnosing any kind of disease, right? So, today we are talking about using audio for depression detection, Alzheimer's detection, schizophrenia, all of those mental disorders, right? So if you are talking about autism, if you are talking about all of that, then it should not happen that any specific sub-group is under-represented or the other group is under-represented.  are not computed in a proper manner right so if that happens then when we have a problem so it has to be sensitive to all of those variations that we are talking about okay so these are the requirements of a good evaluation frameworks broadly now let's take a look at some of the some of the metrics that we have for specific classification tasks right so we have one of the one of the tasks that we said that we will discuss in the course of this class is  speaker verification and audio classification right now what is speaker verification speaker verification is the example that I told you in the morning can somebody remind me ATM right so I am trying to identify who is the speaker and it is two class kind of a problem it can be sorry it can be modeled in two different ways It can be modeled as a binary classification problem Where ATM thing  came in that whether this is a genuine user of the ATM card or not, so genuine versus imposter, the ATM card belongs to Richa, so my audio is matching, what is the second way it can be it can be modelled look for attendance, so I just have an audio sample, let's say law enforcement people क्या कहते हैं उसको audio कैसे collect करते हैं how do you collect the audio मैं भी करता हूँ  सेट इट एगेन पर और मेम रिकॉर्डर सो लेट से दे रिकॉर्डर एन आउडियो कहीं से उनको एक आउडियो मिला अब दे वांट टू आइडेंटिफाई उस आउडियो इस तुस सो देन इट से एन क्लास प्रॉब्लम आई हाव माल्टिपल आई डेंटिटीज इन माई आउडियो करते हुए लेकिन देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने क  and in my data set and i want to figure out okay the reason i'm switching on my camera is i wanted to write something on the board is the board visible to you guys online yes yes thank you so  It can be modeled as a three different problems. So one we said is verification, what is verification? Verification is a two-plus problem, okay? So one is, so we can say one is not and the other is non-not. So this, the audio in, the audio belongs to the speaker.  सब्सक्राइब सब्सक्राइब करें और सब्सक्राइब करें और सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब  कि आप इस ओपन सेट एनी आइडियाज ओके आई गेवी एन एग्जांपल पुलिस वाला पुलिस हेल्स हेल्स हेल्स हेल्स केम अक्रॉस एन ऑडियो सिग्नल ओके आइड देखाओ देखाओ वॉचलेस डेटाबेस वॉचलेस डेटाबेस what you understood so they have a watch list  सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब स  Correct? What is the second case? The person does not, the audio does not belong to any of the individuals on the data set. Now, go back and remember about the classification problems, the classification solutions you guys have developed in your ML courses. What used to be the outputs? What used to be the classes? SVM model, base model, neural network model, any of the models you have come up with, What used to be the output class?  वेटर वेक्टर वेक्टर वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्ट  जो भी कुछ करते हैं हम लोग, right, at the end of the day, if you have 12 classes, it would tell you that the probability of belonging to these 12 classes is ABCDEFGHIJ, probability distribution, or max scores, whatever you get, decimality score, decimality score, you get something out of it, and you assign the sample to the class with the maximum probability with the maximum  simple did anywhere you model it as a 13th class which is class not known anywhere anytime do you did that right because when I am doing this identification these are n class problem if I am doing a cat versus dog classification my outputs are always cat or a dog it never is something else so a third class  two classes classification, a third class which says it does not exist I don't know what the output is okay which becomes very very sensitive when you are doing watchlist kind of a thing it's not a problem of matching right because you don't, if the person is not there on the watchlist, you don't want to be matched to somebody because वो बन दे कि unnecessary की grilling हो जाएगी right, so you want a class which says और अगर आप एक और अगर आप एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और ए  अब एक प्लास है आई-डो-मो-ट्-नॉ और the person does not exist, whatever, however you want to term it. Now, how will you find out this classification? So, it is not, now, it is no more just sorting it. It is no more just sorting it and assigning it to the class with highest mark-square or highest probability. What will it entail?  right so it's not just sorting and assigning it to the highest highest bidder it's also that you can have a threshold on top of it where it says that if the if even the best probability is is below the threshold then you say the person does not exist in my data center right so that is where your speaker verification concept comes in in speaker verification we model and we can model लेता है three different problems.  इस प्रॉब्लम यह नहीं बहुत बहुत बढ़ता है कि यह दिन-दिन 15-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 30.0,
+      "text": " But then within this sub-group of male and female, what is the performance for small kids, what is the performance for teenagers, for adults, and then what is the performance for elderly? These are all shorter-chorter sub-groups, right? And any of these sub-groups, the sub-sub-groups in this case, male-female, so overall class, male-female, and then within male-female I have this age",
+      "language": "hi"
+    },
+    {
+      "start": 30.0,
+      "end": 60.0,
+      "text": " subgroups, right, my data that I collected might not be representative of all of this, it might be unbalanced across subgroups, so males का इदर का data जादा है, उपर का data elderly का data जादा है, adults का data जादा है, I don't have kids, right, female might be I have more data on elderly, I have more data on kids, but I don't have sufficient data on adults here, ठीक है, so any kind of unbalanced representation विशेष नियुक्त",
+      "language": "hi"
+    },
+    {
+      "start": 60.0,
+      "end": 90.0,
+      "text": " unbalanced representation happens that means it has it has a possibility of messing up my overall performance if if i look at class-wise details right so any kind of these trivial differences that come in or sensitivities that come in so we should be aware of that and whatever model or accuracies that we are kind of computing should consider should take cognizance of those subgroups those sampling बिस्टिविशंस और चुकाइए वीडियो",
+      "language": "hi"
+    },
+    {
+      "start": 90.0,
+      "end": 120.0,
+      "text": " It becomes a lot more significant when we are talking about problems like if you are using audio for healthcare, if you are using audio for diagnosing any kind of disease, right? So, today we are talking about using audio for depression detection, Alzheimer's detection, schizophrenia, all of those mental disorders, right? So if you are talking about autism, if you are talking about all of that, then it should not happen that any specific sub-group is under-represented or the other group is under-represented.",
+      "language": "hi"
+    },
+    {
+      "start": 120.0,
+      "end": 150.0,
+      "text": " are not computed in a proper manner right so if that happens then when we have a problem so it has to be sensitive to all of those variations that we are talking about okay so these are the requirements of a good evaluation frameworks broadly now let's take a look at some of the some of the metrics that we have for specific classification tasks right so we have one of the one of the tasks that we said that we will discuss in the course of this class is",
+      "language": "hi"
+    },
+    {
+      "start": 150.0,
+      "end": 180.0,
+      "text": " speaker verification and audio classification right now what is speaker verification speaker verification is the example that I told you in the morning can somebody remind me ATM right so I am trying to identify who is the speaker and it is two class kind of a problem it can be sorry it can be modeled in two different ways It can be modeled as a binary classification problem Where ATM thing",
+      "language": "hi"
+    },
+    {
+      "start": 180.0,
+      "end": 210.0,
+      "text": " came in that whether this is a genuine user of the ATM card or not, so genuine versus imposter, the ATM card belongs to Richa, so my audio is matching, what is the second way it can be it can be modelled look for attendance, so I just have an audio sample, let's say law enforcement people क्या कहते हैं उसको audio कैसे collect करते हैं how do you collect the audio मैं भी करता हूँ",
+      "language": "hi"
+    },
+    {
+      "start": 210.0,
+      "end": 240.0,
+      "text": " सेट इट एगेन पर और मेम रिकॉर्डर सो लेट से दे रिकॉर्डर एन आउडियो कहीं से उनको एक आउडियो मिला अब दे वांट टू आइडेंटिफाई उस आउडियो इस तुस सो देन इट से एन क्लास प्रॉब्लम आई हाव माल्टिपल आई डेंटिटीज इन माई आउडियो करते हुए लेकिन देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने के लिए देखने क",
+      "language": "hi"
+    },
+    {
+      "start": 240.0,
+      "end": 270.0,
+      "text": " and in my data set and i want to figure out okay the reason i'm switching on my camera is i wanted to write something on the board is the board visible to you guys online yes yes thank you so",
+      "language": "hi"
+    },
+    {
+      "start": 270.0,
+      "end": 300.0,
+      "text": " It can be modeled as a three different problems. So one we said is verification, what is verification? Verification is a two-plus problem, okay? So one is, so we can say one is not and the other is non-not. So this, the audio in, the audio belongs to the speaker.",
+      "language": "hi"
+    },
+    {
+      "start": 300.0,
+      "end": 330.0,
+      "text": " सब्सक्राइब सब्सक्राइब करें और सब्सक्राइब करें और सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब",
+      "language": "hi"
+    },
+    {
+      "start": 330.0,
+      "end": 360.0,
+      "text": " कि आप इस ओपन सेट एनी आइडियाज ओके आई गेवी एन एग्जांपल पुलिस वाला पुलिस हेल्स हेल्स हेल्स हेल्स केम अक्रॉस एन ऑडियो सिग्नल ओके आइड देखाओ देखाओ वॉचलेस डेटाबेस वॉचलेस डेटाबेस what you understood so they have a watch list",
+      "language": "hi"
+    },
+    {
+      "start": 360.0,
+      "end": 390.0,
+      "text": " सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब सब्सक्राइब स",
+      "language": "hi"
+    },
+    {
+      "start": 390.0,
+      "end": 420.0,
+      "text": " Correct? What is the second case? The person does not, the audio does not belong to any of the individuals on the data set. Now, go back and remember about the classification problems, the classification solutions you guys have developed in your ML courses. What used to be the outputs? What used to be the classes? SVM model, base model, neural network model, any of the models you have come up with, What used to be the output class?",
+      "language": "hi"
+    },
+    {
+      "start": 420.0,
+      "end": 450.0,
+      "text": " वेटर वेक्टर वेक्टर वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्टर-वेक्ट",
+      "language": "hi"
+    },
+    {
+      "start": 450.0,
+      "end": 480.0,
+      "text": " जो भी कुछ करते हैं हम लोग, right, at the end of the day, if you have 12 classes, it would tell you that the probability of belonging to these 12 classes is ABCDEFGHIJ, probability distribution, or max scores, whatever you get, decimality score, decimality score, you get something out of it, and you assign the sample to the class with the maximum probability with the maximum",
+      "language": "hi"
+    },
+    {
+      "start": 480.0,
+      "end": 510.0,
+      "text": " simple did anywhere you model it as a 13th class which is class not known anywhere anytime do you did that right because when I am doing this identification these are n class problem if I am doing a cat versus dog classification my outputs are always cat or a dog it never is something else so a third class",
+      "language": "hi"
+    },
+    {
+      "start": 510.0,
+      "end": 540.0,
+      "text": " two classes classification, a third class which says it does not exist I don't know what the output is okay which becomes very very sensitive when you are doing watchlist kind of a thing it's not a problem of matching right because you don't, if the person is not there on the watchlist, you don't want to be matched to somebody because वो बन दे कि unnecessary की grilling हो जाएगी right, so you want a class which says और अगर आप एक और अगर आप एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और एक और ए",
+      "language": "hi"
+    },
+    {
+      "start": 540.0,
+      "end": 570.0,
+      "text": " अब एक प्लास है आई-डो-मो-ट्-नॉ और the person does not exist, whatever, however you want to term it. Now, how will you find out this classification? So, it is not, now, it is no more just sorting it. It is no more just sorting it and assigning it to the class with highest mark-square or highest probability. What will it entail?",
+      "language": "hi"
+    },
+    {
+      "start": 570.0,
+      "end": 600.0,
+      "text": " right so it's not just sorting and assigning it to the highest highest bidder it's also that you can have a threshold on top of it where it says that if the if even the best probability is is below the threshold then you say the person does not exist in my data center right so that is where your speaker verification concept comes in in speaker verification we model and we can model लेता है three different problems.",
+      "language": "hi"
+    },
+    {
+      "start": 600.0,
+      "end": 630.0,
+      "text": " इस प्रॉब्लम यह नहीं बहुत बहुत बढ़ता है कि यह दिन-दिन 15-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20-20",
+      "language": "hi"
+    }
+  ]
+}

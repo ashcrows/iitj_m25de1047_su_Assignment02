@@ -1,0 +1,10 @@
+torch
+torchaudio
+transformers
+librosa
+numpy
+scipy
+soundfile
+jiwer
+pyworld
+scikit-learn
